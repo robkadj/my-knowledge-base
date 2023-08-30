@@ -10,8 +10,6 @@ public class App {
 
     public static void main(String... args) {
 
-        Db.getInstance().testDbDriver();
-
         JavaFxApplicationMainFrom javaFxApplicationMainFrom = new JavaFxApplicationMainFrom();
         javaFxApplicationMainFrom.startApplication(args);
     }
