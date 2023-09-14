@@ -1,14 +1,14 @@
-package org.hetatech.mkb.ui.forms;
+package org.hetatech.mkb.ui.forms.input;
 
-public class TypeInputForm extends IdValueInputForm {
+public class AuthorInputForm extends IdValueInputForm {
 
-    public TypeInputForm(IdValue dbIdValue) {
+    public AuthorInputForm(IdValue dbIdValue) {
         super(dbIdValue);
     }
 
     @Override
     protected String formName() {
-        return "Type form";
+        return "Author from";
     }
 
     @Override
@@ -18,21 +18,21 @@ public class TypeInputForm extends IdValueInputForm {
 
     @Override
     protected String valueLabelText() {
-        return "Type";
+        return "Author";
     }
 
     @Override
     protected String saveValueTextButton() {
-        return "Save type";
+        return "Save author";
     }
 
     @Override
     protected String insertSql() {
-        return "INSERT INTO type(type_id, type) VALUES(?, ?)";
+        return "INSERT INTO author(auth_id, author) VALUES(?, ?)";
     }
 
     @Override
     protected String updateSql() {
-        return "UPDATE type SET type = ? WHERE type_id = ?";
+        return "UPDATE author SET author = ? WHERE auth_id = ?";
     }
 }

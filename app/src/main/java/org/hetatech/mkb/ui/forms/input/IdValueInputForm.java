@@ -1,4 +1,4 @@
-package org.hetatech.mkb.ui.forms;
+package org.hetatech.mkb.ui.forms.input;
 
 import com.google.common.base.CharMatcher;
 import com.google.common.base.Strings;
